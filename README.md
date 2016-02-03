@@ -13,9 +13,19 @@ mustJSX(must)
 
 ...
 
+// Test component
+class Garry extends Component {
+  render() {
+    return <div>Garry will {this.props.will}</div>
+  }
+}
+
 describe("Component", function() {
   it("must render correctly", function() {
-    <Component name="Garry" />.must.be.jsx(<Component name="Garry" />)
+    const el = <div>Garry will be avenged!</div>
+
+    // React shallow renderer
+    render(<Garry will="be avenged!" />).must.be.jsx(el)
   })
 })
 

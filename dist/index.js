@@ -7,9 +7,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (Must) {
   Must.prototype.jsx = function (expected) {
     var actual = (0, _reactElementToJsxString2.default)(this.actual);
-    var expected = (0, _reactElementToJsxString2.default)(expected);
+    var transformed = (0, _reactElementToJsxString2.default)(expected);
 
-    this.assert(actual === expected, "equal JSX", { expected: expected });
+    this.assert(actual === transformed, "equal JSX", { expected: expected });
   };
 };
 

@@ -27,5 +27,8 @@
   "dependencies": {
     "react": "^0.14.7",
     "react-element-to-jsx-string": "^2.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
   }
 }

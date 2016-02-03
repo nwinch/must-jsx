@@ -29,6 +29,7 @@
     "react-element-to-jsx-string": "^2.4.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.4.5",
     "mocha": "^2.4.5"
   }
 }

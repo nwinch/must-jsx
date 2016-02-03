@@ -1,0 +1,31 @@
+{
+  "name": "must-jsx",
+  "version": "1.0.0",
+  "description": "Add JSX assertions to Must.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwinch/must-jsx.git"
+  },
+  "keywords": [
+    "must",
+    "jsx",
+    "assert",
+    "assertion",
+    "react",
+    "test"
+  ],
+  "author": "Nathan Winch <nwinch@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwinch/must-jsx/issues"
+  },
+  "homepage": "https://github.com/nwinch/must-jsx#readme",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-element-to-jsx-string": "^2.4.0"
+  }
+}

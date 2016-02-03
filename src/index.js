@@ -2,9 +2,9 @@ import ReactElementToJSXString from "react-element-to-jsx-string"
 
 export default function(Must) {
   Must.prototype.jsx = function(expected) {
-    var actual = ReactElementToJSXString(this.actual)
-    var expected = ReactElementToJSXString(expected)
+    const actual = ReactElementToJSXString(this.actual)
+    const transformed = ReactElementToJSXString(expected)
 
-    this.assert(actual === expected, "equal JSX",  { expected: expected })
+    this.assert(actual === transformed, "equal JSX",  { expected: expected })
   }
 }

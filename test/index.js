@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { createRenderer } from "react-addons-test-utils"
 import must from "must"
 import mustJSX from "../dist/index"
 
@@ -10,12 +11,20 @@ class Test extends Component {
   }
 }
 
+const render = component => {
+  const renderer = createRenderer()
+  renderer.render(component)
+  return renderer.getRenderOutput()
+}
+
 describe(".jsx", function() {
   it("must return true if JSX is the same", function() {
-    <Test />.must.be.jsx(<Test />)
+    const el = <div> will be avenged!</div>
+    render(<Test />).must.be.jsx(el)
   })
 
   it("must return false if JSX is different", function() {
-    <Test name="Garry" />.must.not.be.jsx(<Test />)
+    const el = <div>Garry will be avenged!</div>
+    render(<Test name="Garry" />).must.not.be.jsx(el)
   })
 })

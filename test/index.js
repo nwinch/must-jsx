@@ -24,7 +24,7 @@ describe(".jsx", function() {
   })
 
   it("must return false if JSX is different", function() {
-    const el = <div>Garry will be avenged!</div>
+    const el = <div>Larry will be avenged!</div>
     render(<Test name="Garry" />).must.not.be.jsx(el)
   })
 })

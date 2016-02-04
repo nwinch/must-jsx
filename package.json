@@ -1,6 +1,6 @@
 {
   "name": "must-jsx",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Add JSX assertions to Must.js.",
   "main": "dist/index.js",
   "scripts": {

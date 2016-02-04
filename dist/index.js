@@ -4,10 +4,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function (Must) {
+exports.default = function (Must, custom) {
+  var opts = custom ? { isElement: custom } : {};
+
   Must.prototype.jsx = function (expected) {
-    var actual = (0, _reactElementToJsxString2.default)(this.actual);
-    var transformed = (0, _reactElementToJsxString2.default)(expected);
+    var actual = (0, _reactElementToJsxString2.default)(this.actual, opts);
+    var transformed = (0, _reactElementToJsxString2.default)(expected, opts);
 
     this.assert(actual === transformed, "equal JSX", { expected: expected });
   };

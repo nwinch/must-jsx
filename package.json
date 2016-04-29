@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/nwinch/must-jsx#readme",
   "dependencies": {
-    "react": "^0.14.7",
-    "react-addons-test-utils": "^0.14.7",
+    "react": "^0.14.8",
+    "react-addons-test-utils": "^0.14.8",
     "react-element-to-jsx-string": "git+https://github.com/nwinch/react-element-to-jsx-string.git"
   },
   "devDependencies": {

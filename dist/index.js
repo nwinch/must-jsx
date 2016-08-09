@@ -20,3 +20,5 @@ var _reactElementToJsxString = require("react-element-to-jsx-string");
 var _reactElementToJsxString2 = _interopRequireDefault(_reactElementToJsxString);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = exports["default"];

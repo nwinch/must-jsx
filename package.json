@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/nwinch/must-jsx#readme",
   "dependencies": {
-    "react": "^0.14.8",
-    "react-addons-test-utils": "^0.14.8",
-    "react-element-to-jsx-string": "^2.6.1"
+    "react": "^15.3.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-element-to-jsx-string": "^4.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",

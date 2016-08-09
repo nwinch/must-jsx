@@ -11,6 +11,8 @@ npm install must-jsx
 
 ## Usage
 
+*Note*: If you're using `react@0.14` please use version `2.0.0` or less.
+
 ```javascript
 import must from "must"
 import mustJSX from "must-jsx"
